@@ -111,8 +111,8 @@ function! s:apc_enable()
 	let b:apc_init_autocmd = 1
 	if g:apc_enable_tab
 		inoremap <silent><buffer><expr> <tab>
-					\ pumvisible()? "\<c-n>" :
-					\ <SID>check_back_space() ? "\<tab>" : "\<c-n>"
+					\ pumvisible()? "\<c-y>" :
+					\ <SID>check_back_space() ? "\<tab>" : "\<c-y>"
 		inoremap <silent><buffer><expr> <s-tab>
 					\ pumvisible()? "\<c-p>" : "\<s-tab>"
 		let b:apc_init_tab = 1
